@@ -1,0 +1,15 @@
+version: '3'
+services:
+  redis-server:
+    build:
+      context: redis
+      dockerfile: Dockerfile-redis
+  node-app:
+    environment:
+      REDIS-SERVER: redis
+      BINDING_ADDRESS: "192.168.1.1"
+      SERVERPORT: "4001"
+    build:
+      context: app
+    ports:
+      - "4001:8081"
