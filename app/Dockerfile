@@ -1,7 +1,7 @@
-FROM node:alpine
+FROM python:alpine
+ENV PYTHONUNBUFFERED=1
 WORKDIR /usr/app
-ADD ./package.json ./
-COPY ./package-lock.json ./
-RUN npm install
+ADD ./requirements.txt ./
+RUN pip install -r requirements.txt
 COPY ./ ./
-CMD ["npm", "start"]
+CMD ["python", "app.py"]
