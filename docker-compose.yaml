@@ -1,9 +1,7 @@
 version: '3'
 services:
   redis-server:
-    build:
-      context: redis
-      dockerfile: Dockerfile-redis
+    image: redis:alpine
   node-app:
     environment:
       REDIS-SERVER: redis
