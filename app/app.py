@@ -16,8 +16,7 @@ client.set('visits', 0)
 # defining the root endpoint
 @app.route('/')
 def index():
-    visits = client.get('visits')
-    client.set('visits', int(visits) + 1)
+    visits = client.incr('visits')
     return f'Number of visits is: {visits}'
 
 
