@@ -6,7 +6,7 @@ services:
       - "6379"
   python-app:
     environment:
-      REDIS-SERVER: redis
+      REDIS-SERVER: "redis://redis:6379"
       BINDING_ADDRESS: "192.168.1.1"
       SERVERPORT: "4001"
     build:
