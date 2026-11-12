@@ -1,4 +1,4 @@
-# A Really Important Application
+# A Counter Application
 
 A simple redis-backed web application featuring a hit counter.
 
