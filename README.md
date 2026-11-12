@@ -7,3 +7,6 @@ A simple redis-backed web application featuring a hit counter.
 The goal of the excercise is to demonstrate your generic troubleshooting, debugging, and refactoring skills across this
 repo.  At the end of the exercise, you should be able to run `docker compose up`, browse to the app, and see the counter
 increment on each page load.
+
+## Steps
+run `docker compose up --build` , debug and fix any bug you find
