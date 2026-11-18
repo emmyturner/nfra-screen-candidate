@@ -9,4 +9,4 @@ repo.  At the end of the exercise, you should be able to run `docker compose up 
 increment on each page load.
 
 ## Steps
-run `docker compose up --build` , debug and fix any bug you find
+run `docker compose up --build` , debug and fix any bugs you find
